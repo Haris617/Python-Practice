@@ -68,6 +68,56 @@ print(ListNumber)
 ListNumber.sort(reverse=True)
 print(ListNumber)
 
+#Convert Tuple to List
+TupleA = ('a','b','c','d')
+ListA = list(TupleA)
+ListA[0] = 'e'
+print(ListA)
+
+#Found Element in Tuple
+if 'b' in TupleA:
+    print('Found')
+
+#Dictionary
+Dict1 = {'Name' : 'Haris', 'Age' : 19, 'CGpa' : 3.59}
+print(Dict1)
+
+#Printing Dict Keys
+for i in Dict1.keys():
+    print(i)
+
+#Printing Dict Values
+for i in Dict1.values():
+    print(i)
+
+#Printing Items
+for i in Dict1.items():
+    print(i)
+
+for k, v in Dict1.items():
+    print('Key {}, Value {}'.format(k, v))
+
+#Checking if Key or Value Exist
+print('Name' in Dict1.keys())
+print('Wasim' in Dict1.values())
+
+#Checking ifNoKey return 0 else value of Key
+Dict2 = {'Apple' : 10, 'Mango' : 5}
+print('I have {} apples'.format(Dict2.get('Apple', 0)))
+print('I have {} eggs'.format(Dict2.get('eggs')))
+
+#Adding if key is Not in Dictionary
+Dict2.setdefault('Banana', 12)
+print(Dict2)
+
+#Merging Dictionary
+Dict_a = {'a' : 10, 'b' : 20, 'c' : 30}
+Dict_b = {'b' : 30, 'c' : 40}
+Dict_c = {**Dict_a, **Dict_b}
+print(Dict_c)
+
+
+
 
 
 
