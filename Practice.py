@@ -154,6 +154,26 @@ set3 = {3,6,7}
 print(set1.union(set2))
 print(set1.intersection(set2, set3))
 
+#List Comprehension
+listA = [1,2,3,4,5]
+listA = [i+10 for i in listA]
+print(listA)
+
+#Set Comprehension
+setA = {'a', 'ab', 'b', 'abc'}
+setA = {s.upper() for s in setA}
+
+#Dictionary Comprehension (key = value, value = key) swapping
+fruits = {'apple': 10, 'banana': 20, 'orange': 30}
+print(fruits)
+fruits = {v:k for k, v in fruits.items()}
+print(fruits)
+
+
+
+
+
+
 
 
 
