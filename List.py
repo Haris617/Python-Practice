@@ -61,4 +61,3 @@ for i in range(10):
         print(listB[i])
 
 print('Even Number Count : {}'.format(evenNumber))
-
