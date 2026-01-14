@@ -116,6 +116,43 @@ Dict_b = {'b' : 30, 'c' : 40}
 Dict_c = {**Dict_a, **Dict_b}
 print(Dict_c)
 
+#sets is Used for No Duplicate Entries
+#Support Union, Intersection etc
+
+#adding element in Set
+set1 = {1}
+set1.add(2)
+set1.add(5)
+
+print(set1)
+
+#adding Multiple Elements in Set
+set1.update({2,3,4,5,6})
+print(set1)
+
+#Removing Element From Set
+print('Enter Element to Remove')
+element = int(input())
+
+try:
+    set1.remove(element)
+except Exception as error:
+    print('Error: {}'.format(error))
+finally:
+    print('Set is : ', set1)
+
+#Removing Element From Set (if Element is not in Set, it Will not Show Error
+print('Enter Element to Discard / Remove')
+element = int(input())
+set1.discard(element)
+print(set1)
+
+#Union and Intersection
+set1 = {1,2,3}
+set2 = {3,4,5}
+set3 = {3,6,7}
+print(set1.union(set2))
+print(set1.intersection(set2, set3))
 
 
 
