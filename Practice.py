@@ -169,6 +169,48 @@ print(fruits)
 fruits = {v:k for k, v in fruits.items()}
 print(fruits)
 
+#File Handling
+
+#Write in File
+f = open("NotePad.txt", "w")
+f.write("My Name is Haris")
+f.close()
+
+#Read from File
+f = open("NotePad.txt", "r")
+content = f.read()
+print(content)
+f.close()
+
+#Character Frequency
+frequency = {}
+
+for char in content:
+    if char in frequency:
+        frequency[char] +=1
+    else:
+        frequency[char] = 1
+
+for k, v in sorted(frequency.items()):
+    print('key : ', 'space' if k == ' ' else k, ' and value : ', v)
+
+# Searching Character
+ch = input('\nEnter Character to Find From File: ')
+
+freq = 0
+found = False
+
+for c in content:
+    if c == ch:
+        freq += 1
+        found = True
+
+if not found:
+    print('Character Not Found')
+else:
+    print(ch, 'Found | Frequency =', freq)
+
+
 
 
 
