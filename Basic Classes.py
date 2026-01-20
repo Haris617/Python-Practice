@@ -1,3 +1,17 @@
+# class Date:
+#     def __init__(self, day, month, year):
+#         self.day = day
+#         self.month = month
+#         self.year = year
+#
+# class Employee:
+#     def __init__(self, name, salary, joiningDate):
+#         self.name = name
+#         self.salary = salary
+#         self.joiningDate = joiningDate
+#
+#
+
 class Person:
     def __init__ (self, name, age, ID):
         self.name = name
@@ -20,8 +34,8 @@ while True:
             age = int(input('Enter your age: '))
             ID = input('Enter your ID: ')
 
-            for i in p in PersonList:
-                if ID == p.ID
+            for p in PersonList:
+                if ID == p.ID:
 
                     print('ID Already Exists')
                     break;
@@ -63,9 +77,3 @@ while True:
 
             if not found:
                 print('Invalid ID')
-
-
-
-
-
-
