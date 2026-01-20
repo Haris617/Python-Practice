@@ -211,16 +211,21 @@ else:
     print(ch, 'Found | Frequency =', freq)
 
 
+# Operator Overloading
+class Numbers:
 
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
+    def __add__(self, other):
+       return Numbers(self.x + other.x, self.y + other.y)
 
+a1 = Numbers(10,20)
+a2 = Numbers(10,20)
+a3 = Numbers(10,20)
 
+a3 = a1 + a2 + a3
 
-
-
-
-
-
-
-
+print(a3.x, a3.y)
 
